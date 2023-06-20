@@ -1,0 +1,185 @@
+{
+    "pizza": [
+      {
+        "id": 1,
+        "name": "Fresca picante",
+        "ingredients": [
+          "Tomato sauce", "mozzarella", "spicy ventricine", "black olives", "green onions", "fresco mozzarella"
+        ],
+        "price": 34.99,
+        "imgurl": "https://luckypizza.ro/wp-content/uploads/2023/05/pizza-masline-1024x576.jpg",
+        "allergens": [1, 7, 2, 6]
+      },
+      {
+        "id": 2,
+        "name": "Melanzane",
+        "ingredients": [
+          "Tomato sauce", "mozzarella", "mortadella", "ricotta", "milk mozzarella", "pizza spice", "eggplant"
+        ],
+        "price": 39.00,
+        "imgurl": "https://luckypizza.ro/wp-content/uploads/2022/11/pizza-mortadella.jpg",
+        "allergens": [1, 7, 2]
+      },
+      {
+        "id": 3,
+        "name": "Margherita",
+        "ingredients": [
+          "tomato sauce", "mozzarella", "pizza seasoning"
+        ],
+        "price": 33.00,
+        "imgurl": "https://luckypizza.ro/wp-content/uploads/2018/02/Marhgetirea.jpg",
+        "allergens": [1, 2, 7]
+      },
+      {
+        "id": 4,
+        "name": "Tonno",
+        "ingredients": [
+          "tomato sauce", "mozzarella", "tuna", "onion", "corn"
+        ],
+        "price": 34.00,
+        "imgurl": "https://luckypizza.ro/wp-content/uploads/2018/02/Tonno-1.jpg",
+        "allergens": [1,2, 7, 5,6]
+      },
+  
+      {
+        "id": 5,
+        "name": "Lucky",
+        "ingredients": [
+          "tomato sauce", "mozzarella", "fillet of pork", "arugula", "cherry tomatoes", "parmesan"
+        ],
+        "price": 34.00,
+        "imgurl": "https://luckypizza.ro/wp-content/uploads/2018/02/LKY.jpg",
+        "allergens": [1, 2, 7]
+      },
+  
+      {
+        "id": 6,
+        "name": "Primavera",
+        "ingredients": [
+          "tomato sauce", "mozzarella", "chicken breast", "capsicum", "corn", "mushrooms", "pizza seasoning"
+        ],
+        "price": 34.00,
+        "imgurl": "https://luckypizza.ro/wp-content/uploads/2018/02/Primarevca.jpg",
+        "allergens": [1, 2, 7]
+      },
+  
+      {
+        "id": 7,
+        "name": "Quattro Stagioni",
+        "ingredients": [
+          "tomato sauce", "mozzarella", "ham", "salami", "olives", "mushrooms", "pizza seasoning"
+      ],
+        "price": 34.52,
+        "imgurl": "https://luckypizza.ro/wp-content/uploads/2018/02/Primarevca.jpg",
+        "allergens": [1, 2, 7]
+      },
+      {
+        "id": 8,
+        "name": "Lucky",
+        "ingredients": [
+          "tomato sauce", "mozzarella", "fillet of pork", "arugula", "cherry tomatoes", "parmesan"
+        ],
+        "price": 34.00,
+        "imgurl": "https://luckypizza.ro/wp-content/uploads/2018/02/LKY.jpg",
+        "allergens": [1, 2, 7]
+      },
+      {
+        "id": 9,
+        "name": "Primavera",
+        "ingredients": [
+          "tomato sauce", "mozzarella", "chicken breast", "capsicum", "corn", "mushrooms", "pizza seasoning"
+        ],
+        "price": 34.00,
+        "imgurl": "https://luckypizza.ro/wp-content/uploads/2018/02/Primarevca.jpg",
+        "allergens": [1, 2, 7]
+      }
+    ],
+  
+    "drinks":[
+      {
+        "id": 1,
+        "name": "Coca Cola",
+        "price": 10.00,
+        "imgurl": "https://luckypizza.ro/wp-content/uploads/2023/02/c-normal.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Pepsi",
+        "price": 10.00,
+        "imgurl": "https://luckypizza.ro/wp-content/uploads/2023/02/c-normal.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Mirinda",
+        "price": 10.00,
+        "imgurl": "https://luckypizza.ro/wp-content/uploads/2023/02/c-normal.jpg"
+      },
+      {
+        "id": 4,
+        "name": "Sprite",
+        "price": 10.00,
+        "imgurl": "https://luckypizza.ro/wp-content/uploads/2023/02/c-normal.jpg"
+      },
+      {
+        "id": 5,
+        "name": "Still Water",
+        "price": 10.00,
+        "imgurl": "https://luckypizza.ro/wp-content/uploads/2023/02/c-normal.jpg"
+      },
+      {
+        "id": 6,
+        "name": "Sparkling Water",
+        "price": 10.00,
+        "imgurl": "https://luckypizza.ro/wp-content/uploads/2023/02/c-normal.jpg"
+      }
+    ],
+  
+    "desserts": [
+      {
+        "id": 1,
+        "name": "Tiramisu",
+        "imgurl": "https://richanddelish.com/wp-content/uploads/2022/05/tiramisu-cups-1.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Chocolate Crêpe",
+        "imgurl": "https://i3.wp.com/lmld.org/wp-content/uploads/2014/07/Chocolate-Crepes-11.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Cannoli",
+        "imgurl": "https://www.cookingclassy.com/wp-content/uploads/2020/02/cannoli-20.jpg"
+      }
+    ],
+  
+    "allergens": [
+      {
+          "id": 1,
+          "name": "gluten"
+      },
+      {
+          "id": 2,
+          "name": "dairy"
+      },
+      {
+          "id": 3,
+          "name": "garlic"
+      },
+      {
+          "id": 4,
+          "name": "soy"
+      },
+      {
+          "id": 5,
+          "name": "seafood"
+      },
+      {
+          "id": 6,
+          "name": "onion"
+      },
+      {
+          "id": 7,
+          "name": "tomato"
+      }
+  ]
+  }
