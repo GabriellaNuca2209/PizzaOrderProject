@@ -22,8 +22,27 @@ app.get('/pizza', async (req, res) => {
     const rawData = await fileReaderAsync(productPath);
     const fileData = JSON.parse(rawData);
     res.status(200).send(fileData.pizza);
-
 })
+
+app.get('/drinks', async (req, res) => {
+    const rawData = await fileReaderAsync(productPath);
+    const fileData = JSON.parse(rawData);
+    res.status(200).send(fileData.drinks);
+})
+
+app.get('/desserts', async (req, res) => {
+    const rawData = await fileReaderAsync(productPath);
+    const fileData = JSON.parse(rawData);
+    res.status(200).send(fileData.desserts);
+})
+
+app.get('/allergens', async (req, res) => {
+    const rawData = await fileReaderAsync(productPath);
+    const fileData = JSON.parse(rawData);
+    res.status(200).send(fileData.allergens);
+})
+
+
 
 
 
