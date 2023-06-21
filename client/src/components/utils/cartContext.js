@@ -6,10 +6,15 @@ export const CartContext = createContext({
     addItemToCart: () => {},
     getItemQuantity: () => {},
     getFullPrice: () => {},
+    // Cart Suff
+    openCart: false,
+    setIsCartVisible: () => {},
+    
 })
 
 export function CartContextProvider({ children }) {
     const [cartItems, setCartItems] = useState([]);
+    const [isCartVisible, setIsCartVisible] = useState(false);
 
     function getItemQuantity(id) {
         const quantity = cartItems.find(item => item.id === id)?.quantity;
@@ -41,7 +46,10 @@ export function CartContextProvider({ children }) {
     const contextValue = {
         items: cartItems,
         addItemToCart,
-        getItemQuantity
+        getItemQuantity,
+        // Cart
+        openCart: isCartVisible,
+        setIsCartVisible,
     };
 
     return (

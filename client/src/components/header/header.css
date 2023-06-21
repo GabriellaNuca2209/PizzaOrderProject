@@ -1,0 +1,19 @@
+/* /* .background-blur {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* backdrop-filter: blur(2px); */
+    /* background: tomato;
+} */ 
+
+/* .cart-container {
+    background-color: white;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+} */ 

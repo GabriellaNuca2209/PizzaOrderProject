@@ -18,7 +18,7 @@ const ProductCard = ({item}) => {
             <img className='img-box' src={item.imgurl} alt="pizzaHere" />
             <div className="name">{item.name}</div>
             <div className="price">Price: ${item.price}</div>
-            <button className='add-btn' onClick={() => handleAddBtn(item.id, item.name, item.imgurl, item.price)}>Add To Cart {itemCounter}</button>
+            <button className='add-btn' onClick={() => handleAddBtn(item.id, item.name, item.price, item.imgurl)}>Add To Cart {itemCounter}</button>
         </div>
     );
 }

@@ -1,21 +1,18 @@
+import { useContext, useState } from "react";
 import Cart from "./Cart";
+import "./header.css";
+import { CartContext } from "../utils/cartContext";
 
 const Header = () => {
+    const cart = useContext(CartContext);
 
+    function handleOpen() {
+        cart.setIsCartVisible(true)
+        console.log(cart.openCart);
+    }
 
     return ( 
-        // <div className="header-container">
-        //     <h1>Crustopia</h1>
-        //     <div>
-        //         <button>CART</button>
-        //         <Cart/>
-        //     </div>
-        // </div>
-
-        
-
         <header>
-
             <a href="#" className="logo"><img src="img/logo.png"/></a>
 
             <nav className="navbar">
@@ -27,12 +24,9 @@ const Header = () => {
 
             <div className="icons">
                 <button id="menu"><i className="fas fa-bars" ></i></button>
-                <button><i className="fas fa-shopping-cart"></i></button>
+                <button onClick={() => handleOpen()}><i className="fas fa-shopping-cart"></i></button>
             </div>
-
         </header>
-
-
     )
 }
  
