@@ -34,8 +34,7 @@ const MainPage = () => {
                     }
                 </select>
             </div>
-            {pizzaData && drinksData && dessertsData && allergensData &&
-             <Products filterValue={filterValue} pizzaData={pizzaData} drinksData={drinksData} dessertsData={dessertsData}/>}
+            {pizzaData && drinksData && dessertsData && allergensData && <Products filterValue={filterValue} pizzaData={pizzaData} drinksData={drinksData} dessertsData={dessertsData}/>}
         </div>
     );
 }

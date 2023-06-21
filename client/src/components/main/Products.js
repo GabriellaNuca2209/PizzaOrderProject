@@ -28,7 +28,7 @@ const Products = ({ pizzaData, drinksData, dessertsData, filterValue }) => {
             }
             { 
             dessertsData.map((dessert, index) => (
-                <div className="drink-container" key={index}>
+                <div className="dessert-container" key={index}>
                     <ProductCard item={dessert}/>
                 </div>
             ))

@@ -2,64 +2,64 @@
     "pizza": [
       {
         "id": 1,
-        "name": "Fresca picante",
+        "name": "Classica",
         "ingredients": [
           "Tomato sauce", "mozzarella", "spicy ventricine", "black olives", "green onions", "fresco mozzarella"
         ],
         "price": 34.99,
-        "imgurl": "https://luckypizza.ro/wp-content/uploads/2023/05/pizza-masline-1024x576.jpg",
+        "imgurl": "/img/Classica.png",
         "allergens": [1, 7, 2, 6]
       },
       {
         "id": 2,
-        "name": "Melanzane",
+        "name": "Diavola",
         "ingredients": [
           "Tomato sauce", "mozzarella", "mortadella", "ricotta", "milk mozzarella", "pizza spice", "eggplant"
         ],
         "price": 39.00,
-        "imgurl": "https://luckypizza.ro/wp-content/uploads/2022/11/pizza-mortadella.jpg",
+        "imgurl": "/img/Diavola.png",
         "allergens": [1, 7, 2]
       },
       {
         "id": 3,
-        "name": "Margherita",
+        "name": "Hawaiana",
         "ingredients": [
           "tomato sauce", "mozzarella", "pizza seasoning"
         ],
         "price": 33.00,
-        "imgurl": "https://luckypizza.ro/wp-content/uploads/2018/02/Marhgetirea.jpg",
+        "imgurl": "/img/Hawaiana.png",
         "allergens": [1, 2, 7]
       },
       {
         "id": 4,
-        "name": "Tonno",
+        "name": "Pepperoni",
         "ingredients": [
           "tomato sauce", "mozzarella", "tuna", "onion", "corn"
         ],
         "price": 34.00,
-        "imgurl": "https://luckypizza.ro/wp-content/uploads/2018/02/Tonno-1.jpg",
+        "imgurl": "/img/Pepperoni.png",
         "allergens": [1,2, 7, 5,6]
       },
   
       {
         "id": 5,
-        "name": "Lucky",
+        "name": "Prosciutto e Funghi",
         "ingredients": [
           "tomato sauce", "mozzarella", "fillet of pork", "arugula", "cherry tomatoes", "parmesan"
         ],
         "price": 34.00,
-        "imgurl": "https://luckypizza.ro/wp-content/uploads/2018/02/LKY.jpg",
+        "imgurl": "/img/ProsciuttoFunghi.png",
         "allergens": [1, 2, 7]
       },
   
       {
         "id": 6,
-        "name": "Primavera",
+        "name": "Quattro Formaggi",
         "ingredients": [
           "tomato sauce", "mozzarella", "chicken breast", "capsicum", "corn", "mushrooms", "pizza seasoning"
         ],
         "price": 34.00,
-        "imgurl": "https://luckypizza.ro/wp-content/uploads/2018/02/Primarevca.jpg",
+        "imgurl": "/img/QuattroFormaggi.png",
         "allergens": [1, 2, 7]
       },
   
@@ -70,27 +70,27 @@
           "tomato sauce", "mozzarella", "ham", "salami", "olives", "mushrooms", "pizza seasoning"
       ],
         "price": 34.52,
-        "imgurl": "https://luckypizza.ro/wp-content/uploads/2018/02/Primarevca.jpg",
+        "imgurl": "/img/QuattroStagioni.png",
         "allergens": [1, 2, 7]
       },
       {
         "id": 8,
-        "name": "Lucky",
+        "name": "Tonno e Cipolle",
         "ingredients": [
           "tomato sauce", "mozzarella", "fillet of pork", "arugula", "cherry tomatoes", "parmesan"
         ],
         "price": 34.00,
-        "imgurl": "https://luckypizza.ro/wp-content/uploads/2018/02/LKY.jpg",
+        "imgurl": "/img/Tonno.png",
         "allergens": [1, 2, 7]
       },
       {
         "id": 9,
-        "name": "Primavera",
+        "name": "Vegetariana",
         "ingredients": [
           "tomato sauce", "mozzarella", "chicken breast", "capsicum", "corn", "mushrooms", "pizza seasoning"
         ],
         "price": 34.00,
-        "imgurl": "https://luckypizza.ro/wp-content/uploads/2018/02/Primarevca.jpg",
+        "imgurl": "/img/Vegetariana.png",
         "allergens": [1, 2, 7]
       }
     ],
@@ -138,17 +138,17 @@
       {
         "id": 1,
         "name": "Tiramisu",
-        "imgurl": "https://richanddelish.com/wp-content/uploads/2022/05/tiramisu-cups-1.jpg"
+        "imgurl": "/img/tiramisu.png"
       },
       {
         "id": 2,
         "name": "Chocolate Crêpe",
-        "imgurl": "https://i3.wp.com/lmld.org/wp-content/uploads/2014/07/Chocolate-Crepes-11.jpg"
+        "imgurl": "/img/crepes.png"
       },
       {
         "id": 3,
         "name": "Cannoli",
-        "imgurl": "https://www.cookingclassy.com/wp-content/uploads/2020/02/cannoli-20.jpg"
+        "imgurl": "/img/cannoli.png"
       }
     ],
   
