@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { CartContext } from "../utils/cartContext";
 
 const ProductCard = ({item}) => {
@@ -10,12 +10,18 @@ const ProductCard = ({item}) => {
     function handleAddBtn(id, name, url, price) {
         cart.addItemToCart(id, name, url, price);
         setItemCounter(itemCounter + 1);
+        cart.getFullPrice(price);
     }
 
-    function handleSubBtn(id) {
+    function handleSubBtn(id, price) {
         cart.removeItemFromCart(id);
         setItemCounter(itemCounter - 1);
+        cart.getFullPrice(-price);
     }
+
+    useEffect(() => {
+        setItemCounter(0);
+    }, [cart.clearedCart])
 
 
     return (  
@@ -24,11 +30,11 @@ const ProductCard = ({item}) => {
             <div className="name">{item.name}</div>
             <div className="price">Price: ${item.price}</div>
             {itemCounter === 0 
-            ? <button className='add-btn' onClick={() => handleAddBtn(item.id, item.name, item.price, item.imgurl)}>Add To Cart</button>
+            ? <button className='add-btn' onClick={() => handleAddBtn(item.id, item.name, item.imgurl, item.price)}>Add To Cart</button>
             : <div className="change-quantity">
-                <button onClick={() => handleSubBtn(item.id)}><i className="fa-solid fa-circle-minus" style={{color: "#cdaa7c"}}></i></button>
+                <button onClick={() => handleSubBtn(item.id, item.price)}><i className="fa-solid fa-circle-minus" style={{color: "#cdaa7c"}}></i></button>
                 {itemCounter}
-                <button onClick={() => handleAddBtn(item.id, item.name, item.price, item.imgurl)}><i className="fa-solid fa-circle-plus" style={{color: "#cdaa7c"}}></i></button>
+                <button onClick={() => handleAddBtn(item.id, item.name, item.imgurl, item.price)}><i className="fa-solid fa-circle-plus" style={{color: "#cdaa7c"}}></i></button>
             </div>
             }
             

@@ -2,10 +2,16 @@ import { useContext, useState } from "react";
 import { CartContext } from "../utils/cartContext";
 import ProductInCart from "./ProductInCart";
 
-const Cart = ({setIsCartVisible}) => {
+const Cart = () => {
 
     const cart = useContext(CartContext);
     console.log(cart);
+    console.log(cart.fullPrice)
+
+    function emptyAndCloseCart() {
+        cart.emptyCart();
+        cart.setIsCartVisible(false);
+    }
 
     return (  
         <div className="background-blur">
@@ -25,6 +31,9 @@ const Cart = ({setIsCartVisible}) => {
                 </div>
                 <div className="cart-footer">
                     <button onClick={() => cart.setIsCartVisible(false)}>Back To Shopping</button>
+                    <button onClick={emptyAndCloseCart}>Empty Cart</button>
+                    <div className="total-price">TOTAL PRICE: ${cart.fullPrice.toFixed(2)}</div>
+                    <button>PURCHASE</button>
                 </div>
 
             </div>

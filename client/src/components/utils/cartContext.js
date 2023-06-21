@@ -10,12 +10,21 @@ export const CartContext = createContext({
     getFullPrice: () => {},
     // Cart Suff
     openCart: false,
+    clearedCart: false,
     setIsCartVisible: () => {},
+    emptyCart: () => {},
 })
 
 export function CartContextProvider({ children }) {
     const [cartItems, setCartItems] = useState([]);
     const [isCartVisible, setIsCartVisible] = useState(false);
+    const [isCartEmpty, setIsCartEmpty] = useState(false);
+    const [totalPrice, setFullPrice] = useState(0);
+
+    function getFullPrice(price) {
+        setFullPrice(totalPrice + price);
+        console.log(price)
+    }
 
     function getItemQuantity(id) {
         const quantity = cartItems.find(item => item.id === id)?.quantity;
@@ -25,7 +34,7 @@ export function CartContextProvider({ children }) {
         return quantity;
     }
 
-    function addItemToCart(id, itemName, itemPrice, itemImg) {
+    function addItemToCart(id, itemName, itemImg, itemPrice) {
         const quantity = getItemQuantity(id);
 
         if (quantity === 0) {
@@ -61,15 +70,24 @@ export function CartContextProvider({ children }) {
         }
     }
 
+    function emptyCart() {
+        setCartItems([]);
+        setIsCartEmpty(true);
+    }
+
     const contextValue = {
         items: cartItems,
+        fullPrice: totalPrice,
+        getFullPrice,
         addItemToCart,
         getItemQuantity,
         removeItemFromCart,
         removeCategoryFromCart,
         // Cart
         openCart: isCartVisible,
+        clearedCart: isCartEmpty,
         setIsCartVisible,
+        emptyCart
     };
 
     return (
