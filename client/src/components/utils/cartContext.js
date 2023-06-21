@@ -4,12 +4,13 @@ export const CartContext = createContext({
     items: [],
     fullPrice: 0,
     addItemToCart: () => {},
+    removeItemFromCart: () => {},
+    removeCategoryFromCart: () => {},
     getItemQuantity: () => {},
     getFullPrice: () => {},
     // Cart Suff
     openCart: false,
     setIsCartVisible: () => {},
-    
 })
 
 export function CartContextProvider({ children }) {
@@ -43,10 +44,29 @@ export function CartContextProvider({ children }) {
         }
     }
 
+    function removeCategoryFromCart(id) {
+        setCartItems(cartItems => cartItems.filter(item => item.id !== id))
+    }
+
+    function removeItemFromCart(id) {
+        const quantity = getItemQuantity(id);
+
+        if (quantity === 1) {
+            removeCategoryFromCart(id);
+        } else {
+            setCartItems(cartItems.map(item => item.id === id 
+                ? {...item, quantity: item.quantity - 1} 
+                : item
+                ))
+        }
+    }
+
     const contextValue = {
         items: cartItems,
         addItemToCart,
         getItemQuantity,
+        removeItemFromCart,
+        removeCategoryFromCart,
         // Cart
         openCart: isCartVisible,
         setIsCartVisible,

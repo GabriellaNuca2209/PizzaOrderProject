@@ -5,6 +5,7 @@ import { CartContext } from "../utils/cartContext";
 
 const Header = () => {
     const cart = useContext(CartContext);
+    const cartQuantity = cart.items.reduce((accumulator, value) => accumulator + value.quantity, 0);
 
     function handleOpen() {
         cart.setIsCartVisible(true)
@@ -24,7 +25,7 @@ const Header = () => {
 
             <div className="icons">
                 <button id="menu"><i className="fas fa-bars" ></i></button>
-                <button onClick={() => handleOpen()}><i className="fas fa-shopping-cart"></i></button>
+                <button onClick={() => handleOpen()}><i className="fas fa-shopping-cart"></i>{cartQuantity}</button>
             </div>
         </header>
     )
