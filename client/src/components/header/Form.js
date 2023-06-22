@@ -6,6 +6,9 @@ const Form = ({setIsFormVisible}) => {
     const cart = useContext(CartContext);
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
+    const [street, setStreet] = useState("");
+    const [city, setCity] = useState("");
+    const [phone, setPhone] = useState("");
     
 
     function handleSubmit(e) {
@@ -31,6 +34,11 @@ const Form = ({setIsFormVisible}) => {
             customer: {
                 name,
                 email,
+                address: {
+                    street,
+                    city
+                },
+                phone
             }
         }
 
@@ -45,14 +53,11 @@ const Form = ({setIsFormVisible}) => {
 
     }
 
-    console.log(name);
-
-
     return (  
         <div className="form-blur">
             <div className="main-form-container">
-                <div>
-                    <h2>Order Form</h2>
+                <div className="order-header">
+                    <div>Order Form</div>
                 </div>
                 <div className="form-container">
                     <form onSubmit={handleSubmit}>
@@ -61,14 +66,40 @@ const Form = ({setIsFormVisible}) => {
                             type="text" 
                             value={name}
                             onChange={(e) => setName(e.target.value)}
-                        />
+                            required
+                        /> <br />
 
-                        <label>e-mail</label>
+                        <label>E-mail: </label>
                         <input 
                             type="text" 
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
-                        />
+                            required
+                        /> <br />
+
+                        <label>Street: </label>
+                        <input 
+                            type="text" 
+                            value={street}
+                            onChange={(e) => setStreet(e.target.value)}
+                            required
+                        /> <br />
+
+                        <label>City: </label>
+                        <input 
+                            type="text" 
+                            value={city}
+                            onChange={(e) => setCity(e.target.value)}
+                            required
+                        /> <br />
+
+                        <label>Phone: </label>
+                        <input 
+                            type="text" 
+                            value={phone}
+                            onChange={(e) => setPhone(e.target.value)}
+                            required
+                        /> <br />
 
                         <button type="submit">Submit order</button>
                     </form>

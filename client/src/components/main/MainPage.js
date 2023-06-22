@@ -7,6 +7,7 @@ import { CartContext } from "../utils/cartContext";
 import Cart from "../header/Cart";
 import Form from "../header/Form";
 import Orders from "../adminTools/Orders";
+import Slider from "../slider/Slider";
 
 const MainPage = () => {
 
@@ -34,10 +35,14 @@ const MainPage = () => {
     }
 
     return (  
+
+        <div>
+            {cart.openCart && <Cart setIsFormVisible={setIsFormVisible}/>}
+            {isFormVisible && <Form setIsFormVisible={setIsFormVisible}/>}
+            {cart.isAdminOpen && <Orders orders={ordersData.crustopia}/>}
+            <Slider/>
         <div className='main-page-container'>
-        {cart.openCart && <Cart setIsFormVisible={setIsFormVisible}/>}
-        {isFormVisible && <Form setIsFormVisible={setIsFormVisible}/>}
-        {cart.isAdminOpen && <Orders orders={ordersData.crustopia}/>}
+        
             <div className="menu-container">
                 <div className="filter">
                     <select name="" id="" placeholder="Alergens..." onChange={(event) => handleFilterChange(event.target.value)}>
@@ -51,6 +56,8 @@ const MainPage = () => {
                 </div>
                 {pizzaData && drinksData && dessertsData && allergensData && <Products filterValue={filterValue} pizzaData={pizzaData} drinksData={drinksData} dessertsData={dessertsData}/>}
             </div>
+            
+        </div>
         </div>
     );
 }

@@ -1,38 +1,54 @@
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/autoplay';
+
+
 const Slider = () => {
+
     return (  
-        <div class="home" id="home">
-            <div class="swiper home-slider">
-                <div class="swiper-wrapper wrapper">
-                    <div class="swiper-slide slide slide1">
-                        <div class="content">
-                            <img src="#" alt=""/>
-                            <h3>Delicious</h3>
-                            <h1>Gift voucher</h1>
-                            <p>Give Away to our beloved customers</p>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide slide slide2">
-                        <div class="content">
-                            <img src="#" alt=""/>
-                            <h3>adfhadfhadfh</h3>
-                            <h1>adfhadfhadfh</h1>
-                            <p>adgfhadghadfh</p>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide slide slide3">
-                        <div class="content">
-                            <img src="#" alt=""/>
-                            <h3>adghadfhadfh</h3>
-                            <h1>Hot</h1>
-                            <p>adfhdghgh</p>
-                        </div>
+        <Swiper
+            modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
+            spaceBetween={50}
+            slidesPerView={1}
+            autoplay
+            pagination={{ clickable: true }}
+            onSlideChange={() => console.log('slide change')}
+            onSwiper={(swiper) => console.log(swiper)}
+        >
+            <SwiperSlide>
+                <div className='swiper-wrapper'>
+                    <img className='slider-img' src="/img/pizza1.jpg" alt="" />
+                    <div className="content">
+                        <h3>Delicious</h3>
+                        <h1>Gift voucher</h1>
+                        <p>Give Away to our beloved customers</p>
                     </div>
                 </div>
-                <div class="swiper-pagination"></div>
-            </div>
-        </div>
+            </SwiperSlide>
+            <SwiperSlide>
+                <div className='swiper-wrapper'>
+                    <img className='slider-img' src="/img/pizza2.jpg" alt="" />
+                    <div className="content">
+                        <h3>Steamy</h3>
+                        <h1>Dicounts</h1>
+                        <p>Have a slice of happiness</p>
+                    </div>
+                </div>
+            </SwiperSlide>
+            <SwiperSlide>
+                <div className='swiper-wrapper'>
+                    <img className='slider-img' src="/img/pizza3.jpg" alt="" />
+                    <div className="content">
+                        <h3>Continuing</h3>
+                        <h1>Mario's Legacy</h1>
+                        <p>It's a me, pizza driver!</p>
+                    </div>
+                </div>
+            </SwiperSlide>
+
+        </Swiper>
+
     );
 }
  

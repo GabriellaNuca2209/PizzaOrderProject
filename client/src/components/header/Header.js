@@ -21,6 +21,7 @@ const Header = () => {
                 <a href="#menu">Menu</a>
                 <a href="#about">About</a>
                 <a href="#contact">Contact</a>
+                <button onClick={() => cart.setIsAdminOpen(true)}>Orders</button>
             </nav>
 
             <div className="icons">
@@ -32,7 +33,6 @@ const Header = () => {
                     {cartQuantity > 0 && <div className="cart-quantity">{cartQuantity}</div>}
                 </div>
 
-                {/* <button onClick={() => cart.setIsAdminOpen(true)}>Orders</button> */}
             </div>
         </header>
     )

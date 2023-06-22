@@ -1,6 +1,5 @@
 import Header from './components/header/Header';
 import MainPage from './components/main/MainPage';
-import Slider from './components/slider/Slider';
 import { CartContext, CartContextProvider } from './components/utils/cartContext';
 
 
@@ -10,7 +9,6 @@ function App() {
     <CartContextProvider>
       <div className="App">
         <Header/>
-        {/* <Slider/> */}
         <MainPage/>
       </div>
     </CartContextProvider>

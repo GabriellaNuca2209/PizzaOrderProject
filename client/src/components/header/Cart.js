@@ -23,7 +23,9 @@ const Cart = ({setIsFormVisible}) => {
             <div className="cart-container">
 
                 <div className="cart-header">
+                    <button className="back" onClick={() => cart.setIsCartVisible(false)}>Back To Shopping</button>
                     <div>Shopping Cart</div>
+                    <button className="trash" onClick={emptyAndCloseCart}><i class="fa-solid fa-trash" style={{color: "#fff"}}></i></button>
                 </div>
                 <div className="cart-products">
                     {
@@ -35,9 +37,8 @@ const Cart = ({setIsFormVisible}) => {
                     }
                 </div>
                 <div className="cart-footer">
-                    <button onClick={() => cart.setIsCartVisible(false)}>Back To Shopping</button>
-                    <button onClick={emptyAndCloseCart}>Empty Cart</button>
                     <div className="total-price">TOTAL PRICE: ${cart.fullPrice.toFixed(2)}</div>
+
                     <button onClick={handlePurchase}>PURCHASE</button>
                 </div>
 
