@@ -23,10 +23,11 @@ const Cart = ({setIsFormVisible}) => {
             <div className="cart-container">
 
                 <div className="cart-header">
-                    <button className="back" onClick={() => cart.setIsCartVisible(false)}>Back To Shopping</button>
+                    <button className="back" onClick={() => cart.setIsCartVisible(false)}><i className="fa-sharp fa-solid fa-arrow-left" style={{color: "#ffffff"}}></i></button>
                     <div>Shopping Cart</div>
                     <button className="trash" onClick={emptyAndCloseCart}><i class="fa-solid fa-trash" style={{color: "#fff"}}></i></button>
                 </div>
+
                 <div className="cart-products">
                     {
                         cart.items.map((item, index) => (
@@ -36,10 +37,11 @@ const Cart = ({setIsFormVisible}) => {
                         ))
                     }
                 </div>
+                
                 <div className="cart-footer">
                     <div className="total-price">TOTAL PRICE: ${cart.fullPrice.toFixed(2)}</div>
 
-                    <button onClick={handlePurchase}>PURCHASE</button>
+                    <button onClick={handlePurchase}>Purchase</button>
                 </div>
 
             </div>

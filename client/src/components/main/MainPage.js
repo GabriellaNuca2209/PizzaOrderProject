@@ -23,7 +23,7 @@ const MainPage = () => {
     const { data: allergensData } = useFetch(allergensUrl);
     const { data: ordersData } = useFetch(ordersUrl);
 
-    const [filterValue, setFilterValue] = useState('all');
+    const [filterValue, setFilterValue] = useState('Allergens');
     const [isFormVisible, setIsFormVisible] = useState(false);
 
     const cart = useContext(CartContext);
@@ -45,11 +45,11 @@ const MainPage = () => {
         
             <div className="menu-container">
                 <div className="filter">
-                    <select name="" id="" placeholder="Alergens..." onChange={(event) => handleFilterChange(event.target.value)}>
-                        <option value="all">All</option>
+                    <select onChange={(event) => handleFilterChange(event.target.value)}>
+                        <option value="Allergens">Allergens</option>
                         {
                             allergensData && allergensData.map((allergen, index) => (
-                                <option key={index} value={allergen.id}>{allergen.name}</option>
+                                <option key={index} value={allergen.id}>{allergen.name.charAt(0).toUpperCase() + allergen.name.slice(1)}</option>
                             ))
                         }
                     </select>

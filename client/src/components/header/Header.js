@@ -14,7 +14,10 @@ const Header = () => {
 
     return ( 
         <header>
-            <a href="#" className="logo"><img src="img/logo.png"/></a>
+            <div className="logo-container">
+                <a href="#" className="logo"><img src="img/logo.png"/></a>
+                {/* <h1>Crustopia</h1> */}
+            </div>
 
             <nav className="navbar">
                 <a href="#home" className="active">Home</a>

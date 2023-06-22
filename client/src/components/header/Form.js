@@ -57,49 +57,66 @@ const Form = ({setIsFormVisible}) => {
         <div className="form-blur">
             <div className="main-form-container">
                 <div className="order-header">
-                    <div>Order Form</div>
+                    <div className="order-title">Order Form</div>
                 </div>
                 <div className="form-container">
                     <form onSubmit={handleSubmit}>
-                        <label>Name: </label>
-                        <input 
-                            type="text" 
-                            value={name}
-                            onChange={(e) => setName(e.target.value)}
-                            required
-                        /> <br />
+                        <div>
+                            <label>Name: </label>
+                            <input 
+                                type="text" 
+                                value={name}
+                                onChange={(e) => setName(e.target.value)}
+                                required
+                            />
+                        </div>    
 
-                        <label>E-mail: </label>
-                        <input 
-                            type="text" 
-                            value={email}
-                            onChange={(e) => setEmail(e.target.value)}
-                            required
-                        /> <br />
+                        <div>
 
-                        <label>Street: </label>
-                        <input 
-                            type="text" 
-                            value={street}
-                            onChange={(e) => setStreet(e.target.value)}
-                            required
-                        /> <br />
+                            <label>E-mail: </label>
+                            <input 
+                                type="text" 
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
+                                required
+                            />
+                        </div>
 
-                        <label>City: </label>
-                        <input 
-                            type="text" 
-                            value={city}
-                            onChange={(e) => setCity(e.target.value)}
-                            required
-                        /> <br />
+                        <div>
+                            <label>Street: </label>
+                            <input 
+                                type="text" 
+                                value={street}
+                                onChange={(e) => setStreet(e.target.value)}
+                                required
+                            />
+                        </div>
 
-                        <label>Phone: </label>
-                        <input 
-                            type="text" 
-                            value={phone}
-                            onChange={(e) => setPhone(e.target.value)}
-                            required
-                        /> <br />
+                        <div>
+                            <label>City: </label>
+                            <input 
+                                type="text" 
+                                value={city}
+                                onChange={(e) => setCity(e.target.value)}
+                                required
+                            />
+                        </div>
+
+                        <div>
+                            <label>Phone: </label>
+                            <input 
+                                type="text" 
+                                value={phone}
+                                onChange={(e) => setPhone(e.target.value)}
+                                required
+                            />
+                        </div>
+
+                        <div className="checkbox-container">
+                            <input className="checkbox" type="checkbox"/> 
+                            <p>I have read and agree to Crustopia's User Agreement and Privacy Policy.</p>
+                        </div>
+
 
                         <button type="submit">Submit order</button>
                     </form>

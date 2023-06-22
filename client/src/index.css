@@ -107,7 +107,7 @@
   cursor: pointer;
   border-radius: 15px;
   height: 4.5rem;
-  width: 10rem;
+  width: 5rem;
   background: var(--light-color);
   text-align: center;
   font-size: 1.7rem;
@@ -129,6 +129,7 @@
 .cart-products {
   overflow-y: scroll;
   margin-top: 50px;
+  margin-bottom: 30px;
 }
 
 .cart-product {
@@ -202,14 +203,15 @@
 
 .order-header {
   padding: 10px 10px;
-}
-
-.order-header h2 {
-  font-size: 40px;
+  border-bottom: 3px solid #333;
 }
 
 .form-container {
   padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
 }
 
 .form-container button {
@@ -223,12 +225,39 @@
   color: #fff;
 }
 
+.form-container form div {
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkbox {
+  width: 30px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-container {
+  margin-top: 20px;
+}
+
+.checkbox-container p {
+  font-size: 15px;
+  text-align: left;
+}
+
+
+.form-container form {
+  width: 400px;
+}
+
 input {
   border-radius: 10px;
   width: 200px;
   height: 40px;
   padding: 0px 10px;
-  margin-top: 20px;
 }
 
 
@@ -240,6 +269,9 @@ input {
 
 /* Orders */
 
+.order-title {
+  font-size: 40px;
+}
 
 
 
@@ -258,6 +290,12 @@ input {
   color: white;
   font-size: 40px;
   margin: 0 20px;
+}
+
+select {
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 15px;
 }
 
 html {
@@ -282,6 +320,18 @@ header {
 
 header .logo img {
   height: 70px;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-container h1 {
+  font-size: 30px;
+  margin-left: 10px;
+  color: #fff;
 }
 
 header .navbar a {
