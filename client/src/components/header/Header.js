@@ -25,8 +25,14 @@ const Header = () => {
 
             <div className="icons">
                 <button id="menu"><i className="fas fa-bars" ></i></button>
-                <button onClick={() => handleOpen()}><i className="fas fa-shopping-cart"></i>{cartQuantity}</button>
-                <button onClick={() => cart.setIsAdminOpen(true)}>Orders</button>
+
+                <div className="cart-btn-container">
+                    <button className="cart-btn" onClick={() => handleOpen()}><i className="fas fa-shopping-cart"></i></button>
+                    
+                    {cartQuantity > 0 && <div className="cart-quantity">{cartQuantity}</div>}
+                </div>
+
+                {/* <button onClick={() => cart.setIsAdminOpen(true)}>Orders</button> */}
             </div>
         </header>
     )

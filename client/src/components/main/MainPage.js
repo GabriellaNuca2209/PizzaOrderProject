@@ -38,19 +38,19 @@ const MainPage = () => {
         {cart.openCart && <Cart setIsFormVisible={setIsFormVisible}/>}
         {isFormVisible && <Form setIsFormVisible={setIsFormVisible}/>}
         {cart.isAdminOpen && <Orders orders={ordersData.crustopia}/>}
-
-            <div className="filter">
-                <button>Filter</button>
-                <select name="" id="" placeholder="" onChange={(event) => handleFilterChange(event.target.value)}>
-                    <option value="all">All</option>
-                    {
-                        allergensData && allergensData.map((allergen, index) => (
-                            <option key={index} value={allergen.id}>{allergen.name}</option>
-                        ))
-                    }
-                </select>
+            <div className="menu-container">
+                <div className="filter">
+                    <select name="" id="" placeholder="Alergens..." onChange={(event) => handleFilterChange(event.target.value)}>
+                        <option value="all">All</option>
+                        {
+                            allergensData && allergensData.map((allergen, index) => (
+                                <option key={index} value={allergen.id}>{allergen.name}</option>
+                            ))
+                        }
+                    </select>
+                </div>
+                {pizzaData && drinksData && dessertsData && allergensData && <Products filterValue={filterValue} pizzaData={pizzaData} drinksData={drinksData} dessertsData={dessertsData}/>}
             </div>
-            {pizzaData && drinksData && dessertsData && allergensData && <Products filterValue={filterValue} pizzaData={pizzaData} drinksData={drinksData} dessertsData={dessertsData}/>}
         </div>
     );
 }

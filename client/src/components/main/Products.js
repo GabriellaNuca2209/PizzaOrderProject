@@ -12,27 +12,45 @@ const Products = ({ pizzaData, drinksData, dessertsData, filterValue }) => {
 
     return (  
         <div className="products-container">
-            { 
-            filterPizza.map((pizza, index) => (
-                <div className="pizza-container" key={index}>
-                    <ProductCard item={pizza}/>
+
+            <div className="pizza-box">
+                <div className="pizza-title title">Pizza</div>
+                <div className="pizza">
+                    { 
+                    filterPizza.map((pizza, index) => (
+                        <div className="pizza-container" key={index}>
+                            <ProductCard item={pizza}/>
+                        </div>
+                    ))
+                    }
                 </div>
-            ))
-            }
-            { 
-            drinksData.map((drink, index) => (
-                <div className="drink-container" key={index}>
-                    <ProductCard item={drink}/>
+            </div>
+
+            <div className="drinks-box">
+                <div className="drinks-title title">Drinks</div>
+                <div className="drinks">
+                    { 
+                    drinksData.map((drink, index) => (
+                        <div className="drink-container" key={index}>
+                            <ProductCard item={drink}/>
+                        </div>
+                    ))
+                    }
                 </div>
-            ))
-            }
-            { 
-            dessertsData.map((dessert, index) => (
-                <div className="dessert-container" key={index}>
-                    <ProductCard item={dessert}/>
+            </div>
+
+            <div className="desserts-box">
+                <div className="desserts-title title">Desserts</div>
+                <div className="desserts">
+                    { 
+                    dessertsData.map((dessert, index) => (
+                        <div className="dessert-container" key={index}>
+                            <ProductCard item={dessert}/>
+                        </div>
+                    ))
+                    }
                 </div>
-            ))
-            }
+            </div>
         </div>
     );
 }

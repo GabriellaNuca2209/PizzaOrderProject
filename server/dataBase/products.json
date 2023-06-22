@@ -100,37 +100,37 @@
         "id": "d1",
         "name": "Coca Cola",
         "price": 9.99,
-        "imgurl": "https://luckypizza.ro/wp-content/uploads/2023/02/c-normal.jpg"
+        "imgurl": "/img/cola.png"
       },
       {
         "id": "d2",
         "name": "Pepsi",
         "price": 6.99,
-        "imgurl": "https://luckypizza.ro/wp-content/uploads/2023/02/c-normal.jpg"
+        "imgurl": "/img/pepsi.png"
       },
       {
         "id": "d3",
         "name": "Mirinda",
         "price": 4.99,
-        "imgurl": "https://luckypizza.ro/wp-content/uploads/2023/02/c-normal.jpg"
+        "imgurl": "/img/mirinda.png"
       },
       {
         "id": "d4",
         "name": "Sprite",
         "price": 4.99,
-        "imgurl": "https://luckypizza.ro/wp-content/uploads/2023/02/c-normal.jpg"
+        "imgurl": "/img/sprite.png"
       },
       {
         "id": "d5",
         "name": "Still Water",
         "price": 3.49,
-        "imgurl": "https://luckypizza.ro/wp-content/uploads/2023/02/c-normal.jpg"
+        "imgurl": "/img/water.png"
       },
       {
         "id": "d6",
         "name": "Sparkling Water",
         "price": 3.99,
-        "imgurl": "https://luckypizza.ro/wp-content/uploads/2023/02/c-normal.jpg"
+        "imgurl": "/img/sparkling.png"
       }
     ],
   
