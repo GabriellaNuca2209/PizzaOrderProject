@@ -2,7 +2,7 @@ import { useContext, useState } from "react";
 import { CartContext } from "../utils/cartContext";
 import ProductInCart from "./ProductInCart";
 
-const Cart = () => {
+const Cart = ({setIsFormVisible}) => {
 
     const cart = useContext(CartContext);
     console.log(cart);
@@ -10,6 +10,11 @@ const Cart = () => {
 
     function emptyAndCloseCart() {
         cart.emptyCart();
+        cart.setIsCartVisible(false);
+    }
+
+    function handlePurchase() {
+        setIsFormVisible(true);
         cart.setIsCartVisible(false);
     }
 
@@ -33,7 +38,7 @@ const Cart = () => {
                     <button onClick={() => cart.setIsCartVisible(false)}>Back To Shopping</button>
                     <button onClick={emptyAndCloseCart}>Empty Cart</button>
                     <div className="total-price">TOTAL PRICE: ${cart.fullPrice.toFixed(2)}</div>
-                    <button>PURCHASE</button>
+                    <button onClick={handlePurchase}>PURCHASE</button>
                 </div>
 
             </div>

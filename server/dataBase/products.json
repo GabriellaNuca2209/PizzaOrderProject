@@ -6,7 +6,7 @@
         "ingredients": [
           "Tomato sauce", "mozzarella", "spicy ventricine", "black olives", "green onions", "fresco mozzarella"
         ],
-        "price": 34.99,
+        "price": 33.29,
         "imgurl": "/img/Classica.png",
         "allergens": [1, 7, 2, 6]
       },
@@ -16,7 +16,7 @@
         "ingredients": [
           "Tomato sauce", "mozzarella", "mortadella", "ricotta", "milk mozzarella", "pizza spice", "eggplant"
         ],
-        "price": 39.00,
+        "price": 39.99,
         "imgurl": "/img/Diavola.png",
         "allergens": [1, 7, 2]
       },
@@ -26,7 +26,7 @@
         "ingredients": [
           "tomato sauce", "mozzarella", "pizza seasoning"
         ],
-        "price": 33.00,
+        "price": 33.99,
         "imgurl": "/img/Hawaiana.png",
         "allergens": [1, 2, 7]
       },
@@ -36,7 +36,7 @@
         "ingredients": [
           "tomato sauce", "mozzarella", "tuna", "onion", "corn"
         ],
-        "price": 34.00,
+        "price": 30.49,
         "imgurl": "/img/Pepperoni.png",
         "allergens": [1,2, 7, 5,6]
       },
@@ -47,7 +47,7 @@
         "ingredients": [
           "tomato sauce", "mozzarella", "fillet of pork", "arugula", "cherry tomatoes", "parmesan"
         ],
-        "price": 34.00,
+        "price": 30.99,
         "imgurl": "/img/ProsciuttoFunghi.png",
         "allergens": [1, 2, 7]
       },
@@ -58,7 +58,7 @@
         "ingredients": [
           "tomato sauce", "mozzarella", "chicken breast", "capsicum", "corn", "mushrooms", "pizza seasoning"
         ],
-        "price": 34.00,
+        "price": 32.99,
         "imgurl": "/img/QuattroFormaggi.png",
         "allergens": [1, 2, 7]
       },
@@ -79,7 +79,7 @@
         "ingredients": [
           "tomato sauce", "mozzarella", "fillet of pork", "arugula", "cherry tomatoes", "parmesan"
         ],
-        "price": 34.00,
+        "price": 34.99,
         "imgurl": "/img/Tonno.png",
         "allergens": [1, 2, 7]
       },
@@ -89,7 +89,7 @@
         "ingredients": [
           "tomato sauce", "mozzarella", "chicken breast", "capsicum", "corn", "mushrooms", "pizza seasoning"
         ],
-        "price": 34.00,
+        "price": 34.99,
         "imgurl": "/img/Vegetariana.png",
         "allergens": [1, 2, 7]
       }
@@ -99,37 +99,37 @@
       {
         "id": 1,
         "name": "Coca Cola",
-        "price": 10.00,
+        "price": 9.99,
         "imgurl": "https://luckypizza.ro/wp-content/uploads/2023/02/c-normal.jpg"
       },
       {
         "id": 2,
         "name": "Pepsi",
-        "price": 10.00,
+        "price": 6.99,
         "imgurl": "https://luckypizza.ro/wp-content/uploads/2023/02/c-normal.jpg"
       },
       {
         "id": 3,
         "name": "Mirinda",
-        "price": 10.00,
+        "price": 4.99,
         "imgurl": "https://luckypizza.ro/wp-content/uploads/2023/02/c-normal.jpg"
       },
       {
         "id": 4,
         "name": "Sprite",
-        "price": 10.00,
+        "price": 4.99,
         "imgurl": "https://luckypizza.ro/wp-content/uploads/2023/02/c-normal.jpg"
       },
       {
         "id": 5,
         "name": "Still Water",
-        "price": 10.00,
+        "price": 3.49,
         "imgurl": "https://luckypizza.ro/wp-content/uploads/2023/02/c-normal.jpg"
       },
       {
         "id": 6,
         "name": "Sparkling Water",
-        "price": 10.00,
+        "price": 3.99,
         "imgurl": "https://luckypizza.ro/wp-content/uploads/2023/02/c-normal.jpg"
       }
     ],
@@ -138,16 +138,19 @@
       {
         "id": 1,
         "name": "Tiramisu",
+        "price": 10.99,
         "imgurl": "/img/tiramisu.png"
       },
       {
         "id": 2,
         "name": "Chocolate Crêpe",
+        "price": 7.99,
         "imgurl": "/img/crepes.png"
       },
       {
         "id": 3,
         "name": "Cannoli",
+        "price": 5.49,
         "imgurl": "/img/cannoli.png"
       }
     ],

@@ -11,6 +11,7 @@ const ProductCard = ({item}) => {
         cart.addItemToCart(id, name, url, price);
         setItemCounter(itemCounter + 1);
         cart.getFullPrice(price);
+        console.log(cart.items);
     }
 
     function handleSubBtn(id, price) {

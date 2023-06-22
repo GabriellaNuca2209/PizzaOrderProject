@@ -105,6 +105,41 @@
 
 /* End cart */
 
+/* Start form */
+
+.form-blur {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(2px);
+  z-index: 10000000;
+}
+
+.main-form-container {
+  background-color: white;
+  width: 850px;
+  max-height: 900px;
+  min-height: 800px;
+  border-radius: 10px;
+  box-shadow: rgba(0,0,0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+}
+
+
+
+
 .change-quantity {
   position: absolute;
   bottom: 20px;

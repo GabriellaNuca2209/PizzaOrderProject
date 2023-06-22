@@ -5,6 +5,7 @@ import Products from "./Products";
 import "./main.css";
 import { CartContext } from "../utils/cartContext";
 import Cart from "../header/Cart";
+import Form from "../header/Form";
 
 const MainPage = () => {
 
@@ -19,6 +20,8 @@ const MainPage = () => {
     const { data: allergensData } = useFetch(allergensUrl);
 
     const [filterValue, setFilterValue] = useState('all');
+    const [isFormVisible, setIsFormVisible] = useState(false);
+
     const cart = useContext(CartContext);
 
     function handleFilterChange(allergenID) {
@@ -27,7 +30,8 @@ const MainPage = () => {
 
     return (  
         <div className='main-page-container'>
-        {cart.openCart && <Cart/>}
+        {cart.openCart && <Cart setIsFormVisible={setIsFormVisible}/>}
+        {isFormVisible && <Form setIsFormVisible={setIsFormVisible}/>}
 
             <div className="filter">
                 <button>Filter</button>

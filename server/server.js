@@ -1,5 +1,9 @@
 // import utils
 const {fileReaderAsync, fileWriter} = require('./utils/fileReadAndWrite');
+const {
+    v1: uuidv1,
+    v4: uuidv4
+} = require('uuid');
 
 // express init
 const express = require('express');
@@ -13,6 +17,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 const productPath = path.join(`${__dirname}/dataBase/products.json`);
+const orderPath = path.join(`${__dirname}/dataBase/orders.json`);
 
 app.get('/', (req, res) => {
     res.status(200).json({ msg: "working" });
@@ -42,7 +47,16 @@ app.get('/allergens', async (req, res) => {
     res.status(200).send(fileData.allergens);
 })
 
-
+app.post('/submit', (req, res) => {
+    const incoming = req.body;
+    const order = {
+        id: uuidv1(),
+        order: incoming,
+    }
+    console.log(incoming);
+    fileWriter(orderPath, JSON.stringify(order));
+    res.status(200).json({message: 'successful'});
+})
 
 
 
