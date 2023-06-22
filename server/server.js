@@ -47,15 +47,29 @@ app.get('/allergens', async (req, res) => {
     res.status(200).send(fileData.allergens);
 })
 
-app.post('/submit', (req, res) => {
+app.post('/submit', async (req, res) => {
     const incoming = req.body;
     const order = {
         id: uuidv1(),
         order: incoming,
     }
-    console.log(incoming);
-    fileWriter(orderPath, JSON.stringify(order));
+    
+    const existingOrders = await fileReaderAsync(orderPath);
+    const ordersArr = JSON.parse(existingOrders);
+    ordersArr.crustopia.push(order);
+
+
+
+    fileWriter(orderPath, JSON.stringify(ordersArr));
     res.status(200).json({message: 'successful'});
+})
+
+
+
+app.get('/orders', async (req, res) => {
+    const rawData = await fileReaderAsync(orderPath);
+    const orderData = JSON.parse(rawData);
+    res.status(200).send(orderData);
 })
 
 

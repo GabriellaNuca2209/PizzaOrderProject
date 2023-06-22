@@ -11,6 +11,7 @@ const Form = ({setIsFormVisible}) => {
     function handleSubmit(e) {
         e.preventDefault();
         setIsFormVisible(false);
+        cart.emptyCart()
         const pizzas = [];
         const date = new Date()
         cart.items.map(item => {
@@ -38,7 +39,6 @@ const Form = ({setIsFormVisible}) => {
             headers: {"Content-type": "application/json"},
             body: JSON.stringify(subForm)
         })
-        .then(cart.emptyCart())
 
 
 

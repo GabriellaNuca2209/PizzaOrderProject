@@ -13,6 +13,9 @@ export const CartContext = createContext({
     clearedCart: false,
     setIsCartVisible: () => {},
     emptyCart: () => {},
+    // Orders
+    isAdminOpen: false,
+    setIsAdminOpen: () => {}
 })
 
 export function CartContextProvider({ children }) {
@@ -20,6 +23,7 @@ export function CartContextProvider({ children }) {
     const [isCartVisible, setIsCartVisible] = useState(false);
     const [isCartEmpty, setIsCartEmpty] = useState(false);
     const [totalPrice, setFullPrice] = useState(0);
+    const [isAdminOpen, setIsAdminOpen] = useState(false);
 
     function getFullPrice(price) {
         setFullPrice(totalPrice + price);
@@ -87,7 +91,10 @@ export function CartContextProvider({ children }) {
         openCart: isCartVisible,
         clearedCart: isCartEmpty,
         setIsCartVisible,
-        emptyCart
+        emptyCart,
+        // Orders
+        isAdminOpen: isAdminOpen,
+        setIsAdminOpen,
     };
 
     return (

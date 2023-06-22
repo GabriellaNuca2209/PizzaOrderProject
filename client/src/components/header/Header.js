@@ -26,6 +26,7 @@ const Header = () => {
             <div className="icons">
                 <button id="menu"><i className="fas fa-bars" ></i></button>
                 <button onClick={() => handleOpen()}><i className="fas fa-shopping-cart"></i>{cartQuantity}</button>
+                <button onClick={() => cart.setIsAdminOpen(true)}>Orders</button>
             </div>
         </header>
     )

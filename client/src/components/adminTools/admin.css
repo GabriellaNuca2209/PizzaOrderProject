@@ -1,0 +1,26 @@
+.order-bkg {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #333;
+    z-index: 10000000;
+}
+
+.order-products {
+    background: #fff;
+    width: 200px;
+    height: 400px;
+}
+
+
+
+
+
+
+
+
+
+

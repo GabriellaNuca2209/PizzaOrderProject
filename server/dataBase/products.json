@@ -1,7 +1,7 @@
 {
     "pizza": [
       {
-        "id": 1,
+        "id": "p1",
         "name": "Classica",
         "ingredients": [
           "Tomato sauce", "mozzarella", "spicy ventricine", "black olives", "green onions", "fresco mozzarella"
@@ -11,7 +11,7 @@
         "allergens": [1, 7, 2, 6]
       },
       {
-        "id": 2,
+        "id": "p2",
         "name": "Diavola",
         "ingredients": [
           "Tomato sauce", "mozzarella", "mortadella", "ricotta", "milk mozzarella", "pizza spice", "eggplant"
@@ -21,7 +21,7 @@
         "allergens": [1, 7, 2]
       },
       {
-        "id": 3,
+        "id": "p3",
         "name": "Hawaiana",
         "ingredients": [
           "tomato sauce", "mozzarella", "pizza seasoning"
@@ -31,7 +31,7 @@
         "allergens": [1, 2, 7]
       },
       {
-        "id": 4,
+        "id": "p4",
         "name": "Pepperoni",
         "ingredients": [
           "tomato sauce", "mozzarella", "tuna", "onion", "corn"
@@ -42,7 +42,7 @@
       },
   
       {
-        "id": 5,
+        "id": "p5",
         "name": "Prosciutto e Funghi",
         "ingredients": [
           "tomato sauce", "mozzarella", "fillet of pork", "arugula", "cherry tomatoes", "parmesan"
@@ -53,7 +53,7 @@
       },
   
       {
-        "id": 6,
+        "id": "p6",
         "name": "Quattro Formaggi",
         "ingredients": [
           "tomato sauce", "mozzarella", "chicken breast", "capsicum", "corn", "mushrooms", "pizza seasoning"
@@ -64,7 +64,7 @@
       },
   
       {
-        "id": 7,
+        "id": "p7",
         "name": "Quattro Stagioni",
         "ingredients": [
           "tomato sauce", "mozzarella", "ham", "salami", "olives", "mushrooms", "pizza seasoning"
@@ -74,7 +74,7 @@
         "allergens": [1, 2, 7]
       },
       {
-        "id": 8,
+        "id": "p8",
         "name": "Tonno e Cipolle",
         "ingredients": [
           "tomato sauce", "mozzarella", "fillet of pork", "arugula", "cherry tomatoes", "parmesan"
@@ -84,7 +84,7 @@
         "allergens": [1, 2, 7]
       },
       {
-        "id": 9,
+        "id": "p9",
         "name": "Vegetariana",
         "ingredients": [
           "tomato sauce", "mozzarella", "chicken breast", "capsicum", "corn", "mushrooms", "pizza seasoning"
@@ -97,37 +97,37 @@
   
     "drinks":[
       {
-        "id": 1,
+        "id": "d1",
         "name": "Coca Cola",
         "price": 9.99,
         "imgurl": "https://luckypizza.ro/wp-content/uploads/2023/02/c-normal.jpg"
       },
       {
-        "id": 2,
+        "id": "d2",
         "name": "Pepsi",
         "price": 6.99,
         "imgurl": "https://luckypizza.ro/wp-content/uploads/2023/02/c-normal.jpg"
       },
       {
-        "id": 3,
+        "id": "d3",
         "name": "Mirinda",
         "price": 4.99,
         "imgurl": "https://luckypizza.ro/wp-content/uploads/2023/02/c-normal.jpg"
       },
       {
-        "id": 4,
+        "id": "d4",
         "name": "Sprite",
         "price": 4.99,
         "imgurl": "https://luckypizza.ro/wp-content/uploads/2023/02/c-normal.jpg"
       },
       {
-        "id": 5,
+        "id": "d5",
         "name": "Still Water",
         "price": 3.49,
         "imgurl": "https://luckypizza.ro/wp-content/uploads/2023/02/c-normal.jpg"
       },
       {
-        "id": 6,
+        "id": "d6",
         "name": "Sparkling Water",
         "price": 3.99,
         "imgurl": "https://luckypizza.ro/wp-content/uploads/2023/02/c-normal.jpg"
@@ -136,19 +136,19 @@
   
     "desserts": [
       {
-        "id": 1,
+        "id": "s1",
         "name": "Tiramisu",
         "price": 10.99,
         "imgurl": "/img/tiramisu.png"
       },
       {
-        "id": 2,
+        "id": "s2",
         "name": "Chocolate Crêpe",
         "price": 7.99,
         "imgurl": "/img/crepes.png"
       },
       {
-        "id": 3,
+        "id": "s3",
         "name": "Cannoli",
         "price": 5.49,
         "imgurl": "/img/cannoli.png"
