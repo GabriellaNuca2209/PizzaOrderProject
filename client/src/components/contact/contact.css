@@ -1,0 +1,39 @@
+.contact-main-container {
+    background: #111111;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.contact {
+    width: 150px;
+    text-align: center;
+    color: #fff;
+}
+
+.contact-title {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.contact-info {
+    font-size: 13px;
+    margin: 5px 0px;
+}
+
+.social i {
+    font-size: 20px;
+    margin: 5px 0px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    font-size: 13px;
+}

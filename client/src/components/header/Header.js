@@ -34,6 +34,11 @@ const Header = () => {
         scroll(element);
     }
 
+    function handleContact() {
+        const element = document.querySelector('.contact-main-container');
+        scroll(element);
+    }
+
     return ( 
         <header>
             <div className="logo-container">
@@ -45,7 +50,7 @@ const Header = () => {
                 <a href="#home" onClick={handleHome}>Home</a>
                 <a href="#menu" onClick={handleMenu}>Menu</a>
                 <a href="#about" onClick={handleAbout}>About</a>
-                <a href="#contact">Contact</a>
+                <a href="#contact" onClick={handleContact}>Contact</a>
                 <button onClick={() => cart.setIsAdminOpen(true)}>Orders</button>
             </nav>
 

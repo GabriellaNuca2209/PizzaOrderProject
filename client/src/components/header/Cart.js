@@ -19,7 +19,7 @@ const Cart = ({setIsFormVisible}) => {
     }
 
     return (  
-        <div className="background-blur">
+        <div className="background-blur" onClick={() => cart.setIsCartVisible(false)}>
             <div className="cart-container">
 
                 <div className="cart-header">

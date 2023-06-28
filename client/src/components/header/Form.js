@@ -57,6 +57,10 @@ const Form = ({setIsFormVisible}) => {
         <div className="form-blur">
             <div className="main-form-container">
                 <div className="order-header">
+                    <button className="back" onClick={() => {
+                        cart.setIsCartVisible(true)
+                        setIsFormVisible(false)
+                        }}><i className="fa-sharp fa-solid fa-arrow-left" style={{color: "#ffffff"}}></i></button>
                     <div className="order-title">Order Form</div>
                 </div>
                 <div className="form-container">

@@ -204,6 +204,14 @@
 .order-header {
   padding: 10px 10px;
   border-bottom: 3px solid #333;
+  position: relative;
+  background: rgb(255, 253, 253);
+}
+
+.order-header button {
+  position: absolute;
+  left: 10px;
+  top: 10px;
 }
 
 .form-container {
