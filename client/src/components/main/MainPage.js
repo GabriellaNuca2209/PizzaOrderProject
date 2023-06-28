@@ -36,28 +36,28 @@ const MainPage = () => {
 
     return (  
 
-        <div>
+        <div className="body-container">
             {cart.openCart && <Cart setIsFormVisible={setIsFormVisible}/>}
             {isFormVisible && <Form setIsFormVisible={setIsFormVisible}/>}
             {cart.isAdminOpen && <Orders orders={ordersData.crustopia}/>}
             <Slider/>
-        <div className='main-page-container'>
-        
-            <div className="menu-container">
-                <div className="filter">
-                    <select onChange={(event) => handleFilterChange(event.target.value)}>
-                        <option value="Allergens">Allergens</option>
-                        {
-                            allergensData && allergensData.map((allergen, index) => (
-                                <option key={index} value={allergen.id}>{allergen.name.charAt(0).toUpperCase() + allergen.name.slice(1)}</option>
-                            ))
-                        }
-                    </select>
-                </div>
-                {pizzaData && drinksData && dessertsData && allergensData && <Products filterValue={filterValue} pizzaData={pizzaData} drinksData={drinksData} dessertsData={dessertsData}/>}
-            </div>
+            <div className='main-page-container'>
             
-        </div>
+                <div className="menu-container">
+                    <div className="filter">
+                        <select onChange={(event) => handleFilterChange(event.target.value)}>
+                            <option value="Allergens">Allergens</option>
+                            {
+                                allergensData && allergensData.map((allergen, index) => (
+                                    <option key={index} value={allergen.id}>{allergen.name.charAt(0).toUpperCase() + allergen.name.slice(1)}</option>
+                                ))
+                            }
+                        </select>
+                    </div>
+                    {pizzaData && drinksData && dessertsData && allergensData && <Products filterValue={filterValue} pizzaData={pizzaData} drinksData={drinksData} dessertsData={dessertsData}/>}
+                </div>
+                
+            </div>
         </div>
     );
 }
