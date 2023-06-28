@@ -47,6 +47,18 @@
     color: #cdaa7c;
 }
 
+@media (max-width: 600px) {
+    .staff-pic {
+        width: 150px;
+        height: 150px;
+    }
+
+    .staff-pic img {
+        width: 140px;
+        height: 140px;
+    }
+}
+
 
 
 

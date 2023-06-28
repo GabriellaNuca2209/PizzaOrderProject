@@ -37,10 +37,10 @@ const Contact = () => {
 
                 <div className='social contact'>
                     <div className='social-title contact-title'>Social</div>
-                    <div><i class="fa-brands fa-facebook-f" style={{color: "#ffffff"}}></i></div>
-                    <div><i class="fa-brands fa-twitter" style={{color: "#ffffff"}}></i></div>
-                    <div><i class="fa-brands fa-instagram" style={{color: "#ffffff"}}></i></div>
-                    <div><i class="fa-brands fa-tiktok" style={{color: "#ffffff"}}></i></div>
+                    <div><i className="fa-brands fa-facebook-f" style={{color: "#ffffff"}}></i></div>
+                    <div><i className="fa-brands fa-twitter" style={{color: "#ffffff"}}></i></div>
+                    <div><i className="fa-brands fa-instagram" style={{color: "#ffffff"}}></i></div>
+                    <div><i className="fa-brands fa-tiktok" style={{color: "#ffffff"}}></i></div>
                 </div>
             </div>
 

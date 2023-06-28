@@ -8,6 +8,14 @@ const Header = () => {
     const cart = useContext(CartContext);
     const cartQuantity = cart.items.reduce((accumulator, value) => accumulator + value.quantity, 0);
 
+    function handleHamburger() {
+        const menu = document.querySelector('#menu');
+        const navbar = document.querySelector('.navbar');
+
+        menu.classList.toggle('fa-times');
+        navbar.classList.toggle('active');
+    }
+
     function scroll(element) {
         if (element) {
             element.scrollIntoView({ behavior: 'smooth' });
@@ -43,7 +51,6 @@ const Header = () => {
         <header>
             <div className="logo-container">
                 <a href="#" className="logo"><img src="img/logo.png"/></a>
-                {/* <h1>Crustopia</h1> */}
             </div>
 
             <nav className="navbar">
@@ -51,11 +58,11 @@ const Header = () => {
                 <a href="#menu" onClick={handleMenu}>Menu</a>
                 <a href="#about" onClick={handleAbout}>About</a>
                 <a href="#contact" onClick={handleContact}>Contact</a>
-                <button onClick={() => cart.setIsAdminOpen(true)}>Orders</button>
+                <a href="#orders" onClick={() => cart.setIsAdminOpen(true)}>Orders</a>
             </nav>
 
             <div className="icons">
-                <button id="menu"><i className="fas fa-bars" ></i></button>
+                <i className="fas fa-bars" id="menu" onClick={handleHamburger}></i>
 
                 <div className="cart-btn-container">
                     <button className="cart-btn" onClick={() => handleOpen()}><i className="fas fa-shopping-cart"></i></button>

@@ -37,3 +37,23 @@ footer {
     padding: 20px;
     font-size: 13px;
 }
+
+
+@media (max-width: 600px) {
+    .contact-title {
+        font-size: 15px;
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+    
+    .contact-info {
+        font-size: 8px;
+        margin: 5px 0px;
+    }
+    
+    .social i {
+        font-size: 15px;
+        margin: 5px 0px;
+        cursor: pointer;
+    }
+}

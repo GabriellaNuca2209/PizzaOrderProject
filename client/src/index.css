@@ -355,7 +355,8 @@ header .navbar a:hover {
   border: .1rem solid rgba(205, 170, 124, 0.2);
 }
 
-header .icons button {
+header .icons button,
+header .icons #menu {
   cursor: pointer;
   border-radius: 15px;
   margin-left: .5rem;
@@ -368,7 +369,10 @@ header .icons button {
   color: #fff;
 }
 
-header .icons button:hover {
+
+
+header .icons button:hover,
+header .icons #menu:hover {
   color: var(--light-color);
   background: #fff;
 }
@@ -380,7 +384,7 @@ header .icons #menu {
 /* Slider starts here */
 
 .slider-img {
-  width: 100vw;
+  /* width: 100vw; */
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
@@ -435,5 +439,106 @@ header .icons #menu {
   height: 15px!important;
   border-radius: 50%;
 }
+
+
+@media (max-width: 991px) {
+  html {
+      font-size: 55%;
+  }
+  header {
+      padding: 1rem 2rem;
+  }
+  header .logo img {
+      height: 7rem;
+  }
+}
+
+/* Media */
+
+@media (max-width: 768px) {
+  header .logo img {
+      height: 7rem;
+  }
+  header .icons #menu {
+      display: inline-block;
+  }
+  header .navbar {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: #eee;
+      border-top: .1rem solid rgba(205, 170, 124, 0.2);
+      border-bottom: .1rem solid rgba(205, 170, 124, 0.2);
+      padding: 1rem;
+      clip-path: polygon(0 0,100% 0,100% 0,0 0);
+  }
+  header .navbar.active {
+      clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
+  }
+  header .navbar a {
+      display: block;
+      padding: 1.5rem;
+      margin: 1rem;
+      font-size: 2rem;
+      background: var(--black);
+  }
+  
+  header .icons {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  
+}
+
+@media (max-width: 678px) {
+  .content {
+    padding-left: 0px;
+  }
+}
+
+@media (max-width: 678px) {
+  .content {
+    min-width: 250px;
+    min-height: 250px;
+    left: 100px;
+    text-align: center;
+  }
+
+  .content h3 {
+    color: var(--light-color);
+    font-size: 2rem;
+    font-weight: 300;
+  }
+  
+  .content h1 {
+    color: #fff;
+    font-size: 5rem;
+  }
+  
+  .content p {
+    color: #e6e7e7;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    padding: .5rem 0;
+    line-height: 1.5;
+    font-weight: 200;
+  }
+}
+
+@media (max-width: 600px) {
+  .content {
+    min-width: 250px;
+    min-height: 250px;
+    left: 70px;
+    text-align: center;
+  }
+}
+
+
+
+
+
 
 
