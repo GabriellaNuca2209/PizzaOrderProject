@@ -14,6 +14,7 @@ const Form = ({setIsFormVisible}) => {
     function handleSubmit(e) {
         e.preventDefault();
         setIsFormVisible(false);
+        cart.setFullPrice(0);
         cart.emptyCart()
         const pizzas = [];
         const date = new Date()

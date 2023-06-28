@@ -5,11 +5,10 @@ import ProductInCart from "./ProductInCart";
 const Cart = ({setIsFormVisible}) => {
 
     const cart = useContext(CartContext);
-    console.log(cart);
-    console.log(cart.fullPrice)
 
     function emptyAndCloseCart() {
         cart.emptyCart();
+        cart.setFullPrice(0);
         cart.setIsCartVisible(false);
     }
 

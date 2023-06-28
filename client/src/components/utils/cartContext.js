@@ -3,6 +3,7 @@ import { createContext, useState } from "react";
 export const CartContext = createContext({
     items: [],
     fullPrice: 0,
+    setFullPrice: () => {},
     addItemToCart: () => {},
     removeItemFromCart: () => {},
     removeCategoryFromCart: () => {},
@@ -82,6 +83,7 @@ export function CartContextProvider({ children }) {
     const contextValue = {
         items: cartItems,
         fullPrice: totalPrice,
+        setFullPrice,
         getFullPrice,
         addItemToCart,
         getItemQuantity,
