@@ -63,14 +63,14 @@ select {
 .drinks {
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: repeat(3,2fr);
+    grid-template-columns: repeat(4,2fr);
     grid-row: 1fr;
 }
 
 .desserts {
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: repeat(3,2fr);
+    grid-template-columns: repeat(4,2fr);
     grid-row: 1fr;
 }
 

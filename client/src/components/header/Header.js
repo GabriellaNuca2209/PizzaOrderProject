@@ -8,6 +8,12 @@ const Header = () => {
     const cart = useContext(CartContext);
     const cartQuantity = cart.items.reduce((accumulator, value) => accumulator + value.quantity, 0);
 
+    function scroll(element) {
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+
     function handleOpen() {
         cart.setIsCartVisible(true)
         console.log(cart.openCart);
@@ -15,18 +21,17 @@ const Header = () => {
 
     function handleMenu() {
         const element = document.querySelector('.products-container');
-        if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
-        }
+        scroll(element);
     }
 
     function handleHome() {
         const element = document.querySelector('.body-container');
-        if (element) {
-            if (element) {
-                element.scrollIntoView({ behavior: 'smooth' });
-            }
-        }
+        scroll(element);
+    }
+
+    function handleAbout() {
+        const element = document.querySelector('.about-main-container');
+        scroll(element);
     }
 
     return ( 
@@ -37,9 +42,9 @@ const Header = () => {
             </div>
 
             <nav className="navbar">
-                <a href="#home" className="active" onClick={handleHome}>Home</a>
+                <a href="#home" onClick={handleHome}>Home</a>
                 <a href="#menu" onClick={handleMenu}>Menu</a>
-                <a href="#about">About</a>
+                <a href="#about" onClick={handleAbout}>About</a>
                 <a href="#contact">Contact</a>
                 <button onClick={() => cart.setIsAdminOpen(true)}>Orders</button>
             </nav>

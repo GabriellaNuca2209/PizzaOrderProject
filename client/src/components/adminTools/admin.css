@@ -44,7 +44,7 @@
     align-items: center;
 }
 
-span {
+.items-container span {
     font-weight: 500;
 }
 

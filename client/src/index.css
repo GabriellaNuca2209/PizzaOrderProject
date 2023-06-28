@@ -342,7 +342,6 @@ header .navbar a {
   border-radius: 20px;
 }
 
-header .navbar a.active,
 header .navbar a:hover {
   color: #fff;
   border: .1rem solid rgba(205, 170, 124, 0.2);
