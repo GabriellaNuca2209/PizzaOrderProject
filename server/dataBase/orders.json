@@ -1,1 +1,133 @@
-{"crustopia":[{"id":"00095d70-15e2-11ee-924b-4b2e639d1b7c","order":{"pizzas":[{"id":"p1","quantity":1},{"id":"p2","quantity":1},{"id":"p3","quantity":1}],"date":{"year":2023,"month":5,"day":28,"hour":21,"minutes":31},"customer":{"name":"Ana Banana","email":"unemail@email.com","address":{"street":"Magurelelor nr 32","city":"Nicaieri"},"phone":"0287345629"}}},{"id":"71605000-1bd7-11ee-986c-cfa9ca942e19","order":{"pizzas":[{"id":"p3","quantity":1},{"id":"p2","quantity":2},{"id":"d5","quantity":1},{"id":"s1","quantity":1}],"date":{"year":2023,"month":6,"day":6,"hour":11,"minutes":31},"customer":{"name":"Gogu","email":"smecher@gmail.com","address":{"street":"Pantelimon nr 300","city":"Tralailanda"},"phone":"0700000000"}}}]}
+{
+    "crustopia": [
+        {
+            "id": "00095d70-15e2-11ee-924b-4b2e639d1b7c",
+            "order": {
+                "pizzas": [
+                    {
+                        "id": "p1",
+                        "quantity": 1
+                    },
+                    {
+                        "id": "p2",
+                        "quantity": 1
+                    },
+                    {
+                        "id": "p3",
+                        "quantity": 1
+                    }
+                ],
+                "date": {
+                    "year": 2023,
+                    "month": 5,
+                    "day": 28,
+                    "hour": 21,
+                    "minutes": 31
+                },
+                "customer": {
+                    "name": "Ana Banana",
+                    "email": "unemail@email.com",
+                    "address": {
+                        "street": "Magurelelor nr 32",
+                        "city": "Nicaieri"
+                    },
+                    "phone": "0287345629"
+                }
+            }
+        },
+        {
+            "id": "71605000-1bd7-11ee-986c-cfa9ca942e19",
+            "order": {
+                "pizzas": [
+                    {
+                        "id": "p3",
+                        "quantity": 1
+                    },
+                    {
+                        "id": "p2",
+                        "quantity": 2
+                    },
+                    {
+                        "id": "d5",
+                        "quantity": 1
+                    },
+                    {
+                        "id": "s1",
+                        "quantity": 1
+                    }
+                ],
+                "date": {
+                    "year": 2023,
+                    "month": 6,
+                    "day": 6,
+                    "hour": 11,
+                    "minutes": 31
+                },
+                "customer": {
+                    "name": "Gogu",
+                    "email": "smecher@gmail.com",
+                    "address": {
+                        "street": "Pantelimon nr 300",
+                        "city": "Tralailanda"
+                    },
+                    "phone": "0700000000"
+                }
+            }
+        },
+        {
+            "id": "f9564ca0-1be4-11ee-83a5-7f890c5770ab",
+            "order": {
+                "pizzas": [
+                    {
+                        "id": "p3",
+                        "quantity": 2
+                    },
+                    {
+                        "id": "p4",
+                        "quantity": 1
+                    },
+                    {
+                        "id": "p2",
+                        "quantity": 1
+                    },
+                    {
+                        "id": "p6",
+                        "quantity": 3
+                    },
+                    {
+                        "id": "d2",
+                        "quantity": 3
+                    },
+                    {
+                        "id": "d6",
+                        "quantity": 1
+                    },
+                    {
+                        "id": "s1",
+                        "quantity": 1
+                    },
+                    {
+                        "id": "s3",
+                        "quantity": 1
+                    }
+                ],
+                "date": {
+                    "year": 2023,
+                    "month": 6,
+                    "day": 6,
+                    "hour": 13,
+                    "minutes": 7
+                },
+                "customer": {
+                    "name": "Georgio",
+                    "email": "Armanni@realitalian.com",
+                    "address": {
+                        "street": "Cannoli street",
+                        "city": "Cannolia"
+                    },
+                    "phone": "0728457890"
+                }
+            }
+        }
+    ]
+}

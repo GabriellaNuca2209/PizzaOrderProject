@@ -15,13 +15,13 @@ const MainPage = () => {
     const drinksUrl = "http://localhost:5000/drinks";
     const dessertsUrl = "http://localhost:5000/desserts";
     const allergensUrl = "http://localhost:5000/allergens";
-    const ordersUrl = "http://localhost:5000/orders";
+    // const ordersUrl = "http://localhost:5000/orders";
 
     const { data: pizzaData } = useFetch(pizzaUrl);
     const { data: drinksData } = useFetch(drinksUrl);
     const { data: dessertsData } = useFetch(dessertsUrl);
     const { data: allergensData } = useFetch(allergensUrl);
-    const { data: ordersData } = useFetch(ordersUrl);
+    // const { data: ordersData } = useFetch(ordersUrl);
 
     const [filterValue, setFilterValue] = useState('Allergens');
     const [isFormVisible, setIsFormVisible] = useState(false);
@@ -39,7 +39,7 @@ const MainPage = () => {
         <div className="body-container">
             {cart.openCart && <Cart setIsFormVisible={setIsFormVisible}/>}
             {isFormVisible && <Form setIsFormVisible={setIsFormVisible}/>}
-            {cart.isAdminOpen && <Orders orders={ordersData.crustopia}/>}
+            {cart.isAdminOpen && <Orders />}
             <Slider/>
             <div className='main-page-container'>
             
