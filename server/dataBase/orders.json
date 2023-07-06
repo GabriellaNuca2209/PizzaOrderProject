@@ -73,61 +73,6 @@
                     "phone": "0700000000"
                 }
             }
-        },
-        {
-            "id": "f9564ca0-1be4-11ee-83a5-7f890c5770ab",
-            "order": {
-                "pizzas": [
-                    {
-                        "id": "p3",
-                        "quantity": 2
-                    },
-                    {
-                        "id": "p4",
-                        "quantity": 1
-                    },
-                    {
-                        "id": "p2",
-                        "quantity": 1
-                    },
-                    {
-                        "id": "p6",
-                        "quantity": 3
-                    },
-                    {
-                        "id": "d2",
-                        "quantity": 3
-                    },
-                    {
-                        "id": "d6",
-                        "quantity": 1
-                    },
-                    {
-                        "id": "s1",
-                        "quantity": 1
-                    },
-                    {
-                        "id": "s3",
-                        "quantity": 1
-                    }
-                ],
-                "date": {
-                    "year": 2023,
-                    "month": 6,
-                    "day": 6,
-                    "hour": 13,
-                    "minutes": 7
-                },
-                "customer": {
-                    "name": "Georgio",
-                    "email": "Armanni@realitalian.com",
-                    "address": {
-                        "street": "Cannoli street",
-                        "city": "Cannolia"
-                    },
-                    "phone": "0728457890"
-                }
-            }
         }
     ]
 }
