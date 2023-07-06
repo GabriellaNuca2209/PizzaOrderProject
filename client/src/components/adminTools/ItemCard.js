@@ -2,6 +2,7 @@ const ItemCard = ({item}) => {
     return ( 
         
         <div className="order-products">
+            <div className="card-title">Orders</div>
             { item.order.pizzas.map((i, index) => (
                 <div key={index} className="order-data">
                     <div className="product-id"> <span>Product ID:</span> {i.id}</div>

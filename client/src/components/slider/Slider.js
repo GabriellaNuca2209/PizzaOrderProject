@@ -31,7 +31,7 @@ const Slider = () => {
                     <img className='slider-img' src="/img/pizza2.jpg" alt="" />
                     <div className="content">
                         <h3>Steamy</h3>
-                        <h1>Dicounts</h1>
+                        <h1>Discounts</h1>
                         <p>Have a slice of happiness</p>
                     </div>
                 </div>

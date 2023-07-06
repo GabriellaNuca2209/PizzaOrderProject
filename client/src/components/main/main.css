@@ -85,8 +85,18 @@ select {
 }
 
 .name {
-    margin-top: 100px;
+    margin-top: 120px;
     font-size: 30px;
+    font-weight: 500;
+}
+
+.ingredients {
+    font-size: 17px;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 15px 20px;
+    line-height: 24px;
+    font-style: italic;
 }
 
 .add-btn {

@@ -1,6 +1,7 @@
 import { useContext, useState } from "react";
 import { CartContext } from "../utils/cartContext";
 import ProductInCart from "./ProductInCart";
+import EmptyCart from "./EmptyCart";
 
 const Cart = ({setIsFormVisible}) => {
 
@@ -27,7 +28,8 @@ const Cart = ({setIsFormVisible}) => {
                     <button className="trash" onClick={emptyAndCloseCart}><i class="fa-solid fa-trash" style={{color: "#fff"}}></i></button>
                 </div>
 
-                <div className="cart-products">
+                {cart.items.length > 0 
+                ? <div className="cart-products">
                     {
                         cart.items.map((item, index) => (
                             <div key={index} className="cart-product">
@@ -36,11 +38,16 @@ const Cart = ({setIsFormVisible}) => {
                         ))
                     }
                 </div>
+                :
+                <EmptyCart/>
+                }
+                
                 
                 <div className="cart-footer">
                     <div className="total-price">TOTAL PRICE: ${cart.fullPrice.toFixed(2)}</div>
 
-                    <button onClick={handlePurchase}>Purchase</button>
+                    {cart.items.length > 0 && <button onClick={handlePurchase}>Purchase</button>}
+                    
                 </div>
 
             </div>

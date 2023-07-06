@@ -29,4 +29,34 @@ header .navbar button:hover {
   border: .1rem solid rgba(205, 170, 124, 0.2);
 }
 
+.hungry-container {
+    z-index: 1000;
+    margin-top: 85px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hungry-img {
+    background: url('./img/hungry-anime.gif') no-repeat center / cover;
+    /* height: 700px;
+    width: auto; */
+    height: 500px;
+    width: 500px;
+    padding: 0;
+    margin: 0;
+    border-radius: 50%;
+}
+
+.hungry-text {
+    margin-bottom: 15px;
+    font-size: 50px;
+    color: #c13333;
+}
+
+.hungry-text-2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: #c13333;
+}
 
