@@ -1,1 +1,5 @@
-No starter code is provided. Start from scratch!
+# Pizza Order Website
+
+## This project is based on learning Express.js and React.js
+
+## A responsive website for ordering pizza.
